@@ -12,7 +12,7 @@ public class Controller extends JFrame {
     private JPanel currentPanel;
 
     public Controller() {
-        super("Tron Racer");
+        super("Snake");
         currentPanel = new MenuPanel(this);
         start();
     }

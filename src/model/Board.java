@@ -13,7 +13,7 @@ public class Board {
 
     public Board() {
         boardData = new char[BOARD_HEIGHT][BOARD_WIDTH];
-        playerOne = new JRacer(Color.cyan);
+        playerOne = new JRacer(Color.BLACK);
         initBoardData();
     }
 

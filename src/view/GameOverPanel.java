@@ -30,14 +30,14 @@ public class GameOverPanel extends BasePanel {
     private void setupPanel() {
         setPreferredSize(new Dimension(DEFAULT_WIDTH, DEFAULT_HEIGHT));
         setVisible(true);
-        setBackground(Color.RED);
+        setBackground(new Color(255, 215, 0));
         setLayout(new BorderLayout());
     }
 
     private void setupOkButton() {
         JButton okButton = new JButton("OK");
         okButton.setBackground(Color.BLACK);
-        okButton.setForeground(Color.RED);
+        okButton.setForeground(new Color(255, 215, 0));
         okButton.addActionListener(new ResetGame(controller));
         okButton.setFont(new Font("Verdana", Font.PLAIN, 40));
         this.add(okButton, BorderLayout.PAGE_END);

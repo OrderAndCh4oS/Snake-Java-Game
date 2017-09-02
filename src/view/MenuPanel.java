@@ -18,23 +18,25 @@ public class MenuPanel extends BasePanel {
 
     protected void initialise() {
         setupPanel();
-        setupLabel("SNAKE", BorderLayout.NORTH, 150, Color.CYAN);
+        setupLabel("SNAKE", BorderLayout.NORTH, 150, Color.BLACK);
         setupStartButton();
     }
 
     private void setupStartButton() {
         JButton startButton = new JButton("START GAME");
-        startButton.setBackground(Color.CYAN);
-        startButton.setForeground(Color.BLACK);
+        startButton.setBackground(Color.BLACK);
+        startButton.setForeground(new Color(255, 215, 0));
         startButton.addActionListener(new StartGame(controller));
         startButton.setFont(new Font("Arial", Font.PLAIN, 40));
+        startButton.setFocusPainted(false);
+        startButton.setRequestFocusEnabled(false);
         this.add(startButton, BorderLayout.PAGE_END);
     }
 
     private void setupPanel() {
         this.setPreferredSize(new Dimension(DEFAULT_WIDTH, DEFAULT_HEIGHT));
         setVisible(true);
-        setBackground(Color.BLACK);
+        setBackground(new Color(255, 215, 0));
         setLayout(new BorderLayout());
     }
 }

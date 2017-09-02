@@ -41,7 +41,7 @@ public class GamePanel extends BasePanel implements KeyListener {
     protected void initialise() {
         this.setPreferredSize(new Dimension(DEFAULT_WIDTH, DEFAULT_HEIGHT));
         setVisible(true);
-        setBackground(Color.BLACK);
+        setBackground(new Color(255, 215, 0));
         addKeyListener(this);
     }
 
@@ -59,6 +59,7 @@ public class GamePanel extends BasePanel implements KeyListener {
         super.paintComponent(graphics);
         for (Point position : board.getPlayerOne().getTrail()) {
             graphics.setColor(board.getPlayerOne().getColour());
+            graphics.fillRect(position.x * 10, position.y * 10, 10, 10);
             graphics.drawRect(position.x * 10, position.y * 10, 10, 10);
         }
     }
