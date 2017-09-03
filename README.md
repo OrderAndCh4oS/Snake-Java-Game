@@ -1,3 +1,6 @@
 # Snake-Java-Game
 
-This is my first attempt at a Java game.
+My take on the classic Snake game.
+
+## To play
+Download and run Snake.jar
